@@ -1,0 +1,335 @@
+<style>
+    * {
+      box-sizing: border-box;
+    }
+  
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #444;
+      box-sizing: border-box;
+      margin: 0px;
+    }
+  
+    /**Typeo CSS End**/
+  
+    .faq-btns {
+      margin-bottom: 40px;
+    }
+    .faq-btn {
+      width: 100%;
+      display: inline-block;
+      border: #000 1px solid;
+      border-radius: 4px;
+      text-align: center;
+      margin: 10px 0;
+      background-color: #fff;
+      padding: 14px;
+      text-decoration: none;
+      color: #000;
+      transition: 0.5s all;
+    }
+  
+    .faq-btn:hover {
+      background-color: #000;
+      color: #fff;
+    }
+  
+    .faq-item {
+      width: 80%;
+      margin: auto;
+      border-bottom: #ebebeb 1px solid;
+    }
+  
+    .faq-item .faq-label {
+      position: relative;
+      width: 100%;
+      padding: 12px 26px 12px 0px;
+      cursor: pointer;
+      font-size: 18px;
+      color: #000;
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+    }
+  
+    .faq-item .faq-label i {
+      width: 18px;
+      height: 100%;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+  
+    .faq-item .faq-label i:before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      margin: auto;
+      width: 18px;
+      height: 2px;
+      background-color: #000;
+    }
+  
+    .faq-item .faq-label i:after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      top: 0px;
+      bottom: 0px;
+      margin: auto;
+      width: 2px;
+      height: 18px;
+      background-color: #000;
+      transition: 0.5s all;
+      -webkit-transition: 0.5s all;
+    }
+  
+    .faq-item.faq-item-show .faq-label i:after {
+      opacity: 0;
+    }
+  
+    .faq-cont {
+      transition: 0.3s all;
+      overflow: hidden;
+      height: 0px;
+    }
+  
+    .faq-item.faq-item-show .faq-cont {
+      display: block;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      overflow: auto;
+      height: auto;
+    }
+  
+    .faq-cont p {
+      margin: 0px 0 20px 0;
+    }
+  
+    .faq-cont p:last-child {
+      margin-bottom: 0px;
+    }
+    .spacing {
+    width: 100%;
+    margin: 5% 5% 1% 5%;
+  }
+  
+  .input {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .queries {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .infoSection {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .india {
+    margin-left: 20px;
+  }
+  
+  .anckor {
+    margin-left: 10px;
+  }
+  
+  .contact {
+    color: blueviolet;
+  }
+  
+  @media only screen and (max-width: 450px) {
+    .input {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .spacing {
+      width: 100%;
+      margin: 5%;
+    }
+  
+    span {
+      display: block;
+    }
+  
+    .anckor {
+      margin: 0;
+    }
+  
+    .flag,
+    .india {
+      display: inline-block;
+    }
+  }
+  
+  @media only screen and (max-width: 1010px) {
+    .anckor,
+    .contact {
+      display: block;
+    }
+  
+    .anckor {
+      margin: 0;
+    }
+  }
+  
+  </style>
+  
+  <body>
+    <div class="faq-main">
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">What is BodyFirst ®Enzo Whey?<i></i></div>
+        <div class="faq-cont">
+          BodyFirst&reg;Enzo Whey is the perfect combination of Whey Protein
+          Isolate, Whey Protein Concentrate, Whey Protein Hydrolysate and Enzyme
+          Blend (Protease and&nbsp;ProHydrolase&reg;).
+        </div>
+      </div>
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">
+          How does BodyFirst ®Enzo Whey act?<i></i>
+        </div>
+        <div class="faq-cont">
+          Ingredients of Enzo Whey act by:
+          <ul>
+            <li style="font-weight: 400" aria-level="1">
+              Providing balanced nutrition with purest form of proteins
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              Boosts muscle recovery
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              Prevents muscle soreness
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              Improves protein synthesis
+            </li>
+            <li style="font-weight: 400" aria-level="1">
+              Prevent breakdown or damage of muscle
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">
+          What is the composition of BodyFirst ® Enzo Whey?<i></i>
+        </div>
+        <div class="faq-cont">
+          BodyFirst &reg;Enzo Whey consists of 25g Protein, 5.8g BCAA and
+          266mg of premium enzyme blend in each serving.
+        </div>
+      </div>
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">
+          Is it safe to consume BodyFirst® Enzo Whey for a long time?<i></i>
+        </div>
+        <div class="faq-cont">
+          It is safe to consume on regular basis, however, it is recommended to
+          consult with your doctor if you have any medical condition.
+        </div>
+      </div>
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">
+          Is it safe to consume BodyFirst® Enzo Whey with other health
+          supplement?<i></i>
+        </div>
+        <div class="faq-cont">
+          Yes, it is safe to consume BodyFirst&reg; Enzo Whey with other
+          health supplement.
+        </div>
+      </div>
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">
+          What are the side effects, interactions, and/or contraindications, if
+          any, associated with BodyFirst® Enzo Whey?<i></i>
+        </div>
+        <div class="faq-cont">
+          No known side effects, interactions, and/or contraindications are
+          present with BodyFirst&reg;Enzo Whey.
+        </div>
+      </div>
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">
+          Which flavours are available in BodyFirst® Enzo Whey?<i></i>
+        </div>
+        <div class="faq-cont">
+          BodyFirst&reg; Enzo Whey is available in Double Chocolate and
+          Coffee flavour.
+        </div>
+      </div>
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">
+          Who can all consume BodyFirst® Enzo Whey?<i></i>
+        </div>
+        <div class="faq-cont">
+          Individuals who are aiming for a healthy lifestyle and who want to
+          fulfill their daily protein requirement and people who are involved in
+          intense physical activity.
+        </div>
+      </div>
+      <div class="faq-item" key="Enzo Whey Coffee, Double Chocolate - Jar">
+        <div class="faq-label">
+          What are the benefits of consuming BodyFirst® Enzo Whey?<i></i>
+        </div>
+        <div class="faq-cont">
+          BodyFirst&reg; Enzo Whey helps with muscle recovery, improves
+          protein synthesis,&nbsp;improves athletic performance, and prevents
+          breakdown or damage of muscles.
+        </div>
+      </div>
+      <div class="infoSection">
+      <div class="input">
+          <div class="spacing">
+              <strong>* Marketed By: </strong> <br>
+              BodyFirst Wellness Nutrition Private Limited <br>
+              <span style="color: #000;">220, Udyog Bhavan, Sonawala Lane, Goregaon (East), </span>
+              <span>Mumbai, Maharashtra - 400063</span> <br>
+              FSSAI Lic. No.: <span style="color: blueviolet;">10019022009712</span> <br>
+          </div>
+  
+          <div class="spacing">
+              <strong>* Manufactured by: </strong><br>
+              Gangwal Healthcare Pvt. Ltd.<br>
+              <span style="color: #000;">Plot No. T1, MIDC Tarapur, Palghar Zone 1, <br/>Maharashtra-
+                  <span style="color: blueviolet;">401506</span>, India.</span> <br>
+              <span>FSSAI Lic. no. <span style="color: blueviolet;">10018022008202</span> </span>
+          </div>
+      </div>
+      <div class="input">
+  
+          <div class="spacing">
+              <h6 style="margin: 0;">Customer care details</h6>
+              Customer care contact: <span class="contact">+91 86579 23196</span> <br>
+              <span>Email id: </span><a class="anckor" href="#">support@bodyfirst.in</a> <br>
+          </div>
+          <div class="spacing">
+              <h6 style="margin: 0;">Country of Origin</h6>
+  
+              <span class="india"><strong>India</strong></span>
+          </div>
+  
+      </div>
+  </div> 
+    </div>
+    <script>
+      let items = document.querySelectorAll(".faq-main .faq-item");
+      items.forEach(function (t) {
+        t.addEventListener("click", function (e) {
+          items.forEach(function (e) {
+            e !== t || e.classList.contains("faq-item-show")
+              ? e.classList.remove("faq-item-show")
+              : e.classList.add("faq-item-show");
+          });
+        });
+      });
+    </script>
+  </body>
+  
